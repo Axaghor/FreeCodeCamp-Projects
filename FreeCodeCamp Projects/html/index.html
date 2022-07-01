@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <title>Adopt a kitten</title>
-  <body>
-    <main>
-      <h1 id="title">Adopt a kitten</h1>
-      <p id="description">Fill this form and save a kitten</p>
-    </main>
-    <div class="container">
-      <form id="survey-form">
-        <fieldset>
-          <label id="name-label">Name <input type="text" id="name" placeholder="Put your name here" required/></label>
-          <label id="email-label">Email <input type="email" id="email" placeholder="Put your email here" required/></label>
-          <label id="number-label">Age <input type="number" id="number" placeholder="How old are you?" minlength="18" maxlength="100" required/></label>
-        </fieldset>
-        <fieldset>
 
-        </fieldset>
-        <fieldset>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<title>Adopt a kitten</title>
 
-        </fieldset>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </body>
+<body>
+  <main>
+    <h1 id="title">Adopt a kitten</h1>
+    <p id="description">Fill this form and save a kitten</p>
+  </main>
+  <div class="container">
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name
+          <input type="text" id="name" placeholder="Put your name here" required /></label>
+        <label id="email-label">Email
+          <input type="email" id="email" placeholder="Put your email here" required /></label>
+        <label id="number-label">Age
+          <input type="number" id="number" placeholder="How old are you?" minlength="18" maxlength="100"
+            required /></label>
+        <p>What is your gender?</p>
+        <select name="gender" id="dropdown">
+          <option selected disabled hidden>(select one)</option>
+          <option value="">Male</option>
+          <option value="">Female</option>
+          <option value="">Prefer not specify</option>
+        </select>
+      </fieldset>
+      <fieldset></fieldset>
+      <fieldset></fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+
 </html>
