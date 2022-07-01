@@ -1,9 +1,25 @@
 body{
   font-family: 'Montserrat', sans-serif;
-  background-image: linear-gradient(45deg, rgba(79, 71, 137, 0.9), rgba(32, 19, 53, 0.9)), url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F34%2F2018%2F05%2F12170411%2Fcat-kitten-138468381.jpg);
+  background-image: linear-gradient(45deg, rgba(79, 71, 137, 0.8), rgba(32, 19, 53, 0.8)), url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F34%2F2018%2F05%2F12170411%2Fcat-kitten-138468381.jpg);
   background-size:contain;
   background-repeat: no-repeat;
   background-position:top;
   color: #fffded;
   height: 99vh;
+}
+main{
+  text-align: center;
+}
+.container{
+  padding: 30px;
+  background-color: rgba(152, 136, 165, 0.7);
+  max-width: 500px;
+  min-width: 300px;
+  border-radius: 25px;
+  margin: 0 auto;
+
+}
+input{
+  margin: 0 auto;
+  width: 100%;
 }
