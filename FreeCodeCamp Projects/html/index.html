@@ -24,10 +24,10 @@
       <label id="number-label">How old are you? <input id="number" type="number" placeholder="Input your age here" min="18" max="80" required></label>
       <label>What is your gender?
         <select id="dropdown">
-          <option selected disabled hidden>(select one)</option>
-          <option>Male</option>
-          <option>Female</option>
-          <option>Prefer not to say</option>
+          <option value="" selected disabled hidden>(select one)</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Prefer not to say</option>
         </select>
       </label>
     </fieldset>
@@ -36,10 +36,8 @@
       <label><input type="radio" name="user-experience" value="medium"/> I don't have cats but I interact with them a lot</label>
       <label><input type="radio" name="user-experience" value="low"/> I've had at least one cat before, I know the basics</label>
       <label><input type="radio" name="user-experience" value="none"/> I've never had a cat before</label>
-      <label><input type="checkbox" value="safety" required /> I assure that my home is a <strong>safe environment</strong> for this cat to live
-        in</label>
-      <label><input type="checkbox" value="responsability" required /> I promise to <strong>protect, love and take care</strong> of the little ball of fur I'm
-        about to adopt</label>
+      <label><input type="checkbox" value="safety" required /> I assure that my home is a <strong>safe environment</strong> for this cat to live in</label>
+      <label><input type="checkbox" value="responsability" required /> I promise to <strong>protect, love and take care</strong> of the little ball of fur I'm about to adopt</label>
     </fieldset>
     <fieldset></fieldset>
     <input id="submit" type="submit" />
