@@ -13,17 +13,17 @@
 
 <body>
   <main>
-    <h1>Adopt a kitten</h1>
-    <p>Fill this form and save a kitten</p>
+    <h1 id="title">Adopt a kitten</h1>
+    <p id="description">Fill this form and save a kitten</p>
   </main>
-  <form>
+  <form id="survey-form">
     <fieldset>
-      <label class="">Name <input type="text" placeholder="Input your name here"></label>
-      <label>Last name <input type="text" placeholder="Input your last name here"></label>
-      <label>Email <input type="email" placeholder="Input your email here"></label>
-      <label>How old are you? <input type="number" placeholder="Input your age here"></label>
+      <label id="name-label">Name <input id="name" type="text" placeholder="Input your name here" required></label>
+      <label id="lastname-label">Last name <input id="lastname" type="text" placeholder="Input your last name here" required></label>
+      <label id="email-label">Email <input id="email" type="email" placeholder="Input your email here" required></label>
+      <label id="number-label">How old are you? <input id="number" type="number" placeholder="Input your age here" min="18" max="80" required></label>
       <label>What is your gender?
-        <select>
+        <select id="dropdown">
           <option selected disabled hidden>(select one)</option>
           <option>Male</option>
           <option>Female</option>
@@ -32,17 +32,17 @@
       </label>
     </fieldset>
     <fieldset>
-      <label><input type="radio" name="user-experience" /> I have cats and I know how to take care ot them</label>
-      <label><input type="radio" name="user-experience" /> I don't have cats but I interact with them a lot</label>
-      <label><input type="radio" name="user-experience" /> I've had at least one cat before, I know the basics</label>
-      <label><input type="radio" name="user-experience" /> I've never had a cat before</label>
-      <label><input type="checkbox" required /> I assure that my home is a safe environment for this cat to live
+      <label><input type="radio" name="user-experience" value="high" /> I have cats and I know how to take care ot them</label>
+      <label><input type="radio" name="user-experience" value="medium"/> I don't have cats but I interact with them a lot</label>
+      <label><input type="radio" name="user-experience" value="low"/> I've had at least one cat before, I know the basics</label>
+      <label><input type="radio" name="user-experience" value="none"/> I've never had a cat before</label>
+      <label><input type="checkbox" value="safety" required /> I assure that my home is a <strong>safe environment</strong> for this cat to live
         in</label>
-      <label><input type="checkbox" required /> I promise to protect, love and take care of the little ball of fur I'm
+      <label><input type="checkbox" value="responsability" required /> I promise to <strong>protect, love and take care</strong> of the little ball of fur I'm
         about to adopt</label>
     </fieldset>
     <fieldset></fieldset>
-    <input type="submit" />
+    <input id="submit" type="submit" />
   </form>
 </body>
 
