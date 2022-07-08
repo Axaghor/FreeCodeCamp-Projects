@@ -1,7 +1,0 @@
-Build a Survey Form
-Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks
-
-You should have at least one textarea element that is a descendant of #survey-form.
-You should have an input or button element with an id of submit.
-Your #submit should have a type of submit.
-Your #submit should be a descendant of #survey-form.
